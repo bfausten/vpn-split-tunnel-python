@@ -1,5 +1,4 @@
 from __future__ import annotations
-from download_images import download_image
 import logging
 import subprocess
 import sys
