@@ -44,3 +44,5 @@ change_vpn(new_config_path, route_up_path)
   - `ip route show`
   - `ip rule show`
   - `curl ifconfig.io` before and after connecting.
+### Acknowledgements
+This repo uses the open source package [linux-vpn-split-tunnel](https://github.com/fedebotu/linux-vpn-split-tunnel).
