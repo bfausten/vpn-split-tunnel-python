@@ -37,12 +37,12 @@ disconnect_vpn(final_disconnect=True, clean_up_path)
 ```python
 change_vpn(new_config_path, route_up_path)
 ```
-- Only set `final_disconnect=False` if you don't plan on cleanup afterwards (e.g. if you're connecting to another VPN in the near future)
+- Only set `final_disconnect=False` if you don't plan on cleaning up afterwards (e.g. if you're connecting to another VPN in the near future)
 - Only set `first_use=False` if you were already connected to a VPN before and *haven't* used `clean_up_script.sh`. `split-tunnel.sh` has to be active still! Otherwise the ssh-connection will freeze.
 ### Verification
-- You can check whether the VPN is connected and the split-tunnel is working correctly, use
+- You can check whether the VPN is connected and the split-tunnel is working correctly. Use
   - `ip route show`
   - `ip rule show`
   - `curl ifconfig.io` before and after connecting.
 ### Acknowledgements
-This repo uses the open source package [linux-vpn-split-tunnel](https://github.com/fedebotu/linux-vpn-split-tunnel).
+This repo uses parts of the open source package [linux-vpn-split-tunnel](https://github.com/fedebotu/linux-vpn-split-tunnel).
